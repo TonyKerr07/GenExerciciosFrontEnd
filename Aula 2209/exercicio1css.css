@@ -1,0 +1,80 @@
+body {
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+
+header {
+    background-color: black; 
+    color: white; 
+    text-align: center; 
+    padding: 10px; 
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin-left: -15px;
+}
+
+footer {
+    background-color: black; 
+    color: white; 
+    text-align: center; 
+    padding: 10px; 
+    position: fixed; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-left: -15px;
+}
+
+  a {
+    color: black; 
+  }
+  
+  a:hover {
+    color: yellow; 
+  }
+  
+  h2{
+    text-align: center;
+    text-decoration: underline; 
+    margin-left: 0;
+  }
+
+  li{
+    color: yellow;
+    margin-left: 100px;
+  }
+
+  h4{
+    color: black;
+  }
+
+  p{
+    font-family: Arial, sans-serif; 
+    font-size: 16px; 
+    color: black; 
+    line-height: 1.5; 
+    margin-left: 100px;
+  }
+
+  figure {
+    text-align: center; /* Centraliza a figura horizontalmente (opcional) */
+  }
+  
+  figure img {
+    width: 1000px; /* Define a largura da imagem */
+    height: auto; /* Mantém a proporção da imagem ajustando a altura automaticamente */
+  }
+  
+  .centered-text{
+    text-align: center;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  h3{
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
