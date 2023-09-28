@@ -1,0 +1,83 @@
+body {
+    margin-top: 70px;
+    margin-bottom: 200px;
+    font-family: "Arial", sans-serif;
+    text-align: justify;
+    background-image: url('./imagens/fundosite.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: black; 
+    color: white; 
+    padding: 20px; 
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+footer {
+    background-color: black; 
+    color: white; 
+    padding: 10px;
+    position: fixed; 
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: large;
+}
+
+.foto {
+    position: fixed; 
+    left: 0;
+    top: 58px; 
+}
+
+img {
+    width: 500px; 
+    height: auto; 
+    left: 0;
+    position: left;
+}
+.texto {
+    margin-left: 500px;
+    margin-right: 30px;
+}
+
+.descricao {
+    right: 0;
+}
+
+.topo{
+    text-align: end;
+    font-size: larger;
+    margin: 0;
+    margin-top: -22px;
+    margin-right: 100px;
+}
+
+a {
+    text-align: left;
+    color: white;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-right: 0;
+}
+
+a:hover {
+    color: blue;    
+}
+
+.icon{
+    width: 20px; 
+    height: auto; 
+    padding-left: 275px;
+}
+
+.home{
+    width: 50px; 
+    height: auto; 
+    padding-left: 175px;
+}

@@ -2,6 +2,7 @@ table {
     margin: 0 auto; 
     border-collapse: collapse;
 }
+
 th {
     text-align: center; 
     padding-top: 10px;
@@ -13,6 +14,7 @@ th {
     text-size-adjust: 10;
     border: 1px solid black;
 }
+
 td{
     text-align: center; 
     padding-top: 10px;
@@ -36,6 +38,7 @@ body {
     margin-top: 150px;
     margin-bottom: 200px;
 }
+
 header {
     background-color: black; 
     color: white; 

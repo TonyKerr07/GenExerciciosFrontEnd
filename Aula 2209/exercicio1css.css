@@ -59,12 +59,12 @@ footer {
   }
 
   figure {
-    text-align: center; /* Centraliza a figura horizontalmente (opcional) */
+    text-align: center; 
   }
   
   figure img {
-    width: 1000px; /* Define a largura da imagem */
-    height: auto; /* Mantém a proporção da imagem ajustando a altura automaticamente */
+    width: 1000px; 
+    height: auto; 
   }
   
   .centered-text{
