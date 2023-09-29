@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo JavaScript</title>
+    <script>
+        nome1 = window.prompt("Qual o seu nome?");
+        if(nome1!=null && nome1!=""){
+            document.write("Olá, "+nome1+"!!!");
+        }
+        else{
+            document.write("Olá, visitante");
+        }
+        
+    </script>
+</head>
+<body>
+    <script>
+        function validar(){
+            if(document.cadastro.nome.value==""){
+                window.alert("Você deve preencher o campo nome, pois ele é um campo obrigatório...");
+                document.cadastro.nome.focus();
+                return false;
+            }
+            if(document.cadastro.observacoes.value == ""){
+                window.alert("Você deve colocar alguma observação, pois o campo é obrigatório...");
+                document.cadastro.observacoes.focus();
+                return false;
+            }
+        }
+    </script>
+    <script language="JavaScript">
+        function testeArvoreDOM(){
+            var elemento = document.documentElement.lastChild;
+            alert("Eu sou o nó"+Element.nodeName);
+
+            var outroElemento = document.getElementsByTagName('h1')[0];
+            alert("Eu sou o nó"+Element.nodeValue);
+
+            var filho = outroElemento.firstChild;
+        }
+    </script>
+    <script>
+        let data = new Date();
+        document.body.innerHTML = "<h1>Hora atual: "+data.getHours()+" : "+data.getMinutes()+" : "+data.getSeconds()
+            "<h1>"
+    </script>
+    <form action="mailto:teste@gmail.com" method="post" enctype="text/plain" name="cadastro">
+        <p>Por favor, preencha os campos abaixo e depois clique no botão enviar. Caso
+            necessite apagar os dados, dê um clique no botão Limpar. <br> Muito obrigado!!!
+         <br><br><br></p>
+         Nome completo: <input type="text" name="nome" size="35">
+         
+         Seu e-mail: <input type="text" name="email" size="35"><br>
+         
+         Genero: <br>
+         <input type="radio" name="genero" value="f">Feminino<br>
+         <input type="radio" name="genero" value="m">Masculino<br><br>
+
+         Estado Civil:<br>
+         <input type="radio" name="civil" value="s">Solteiro<br>
+         <input type="radio" name="civil" value="c">Casado<br>
+         <input type="radio" name="civil" value="e">Enrolado<br><br>
+
+         Bens que possui: <br>
+         <input type="checkbox" name="bens" value="c">Casa<br>
+         <input type="checkbox" name="bens" value="a">Automovel<br>
+         <input type="checkbox" name="bens" value="m">Moto<br><br>
+
+         Faixa de idade: <select name="faixaidade">
+            <option value="3 a 10">3 a 10 anos</option>
+            <option value="11 a 25">11 a 25 anos</option>
+            <option value="26 a 35">26 a 35 anos</option>
+            <option value="36 a 55">36 a 55 anos</option>
+            <option value="56 a 90">56 a 90 anos</option>
+         </select>
+         Hobby preferido: <select name="hobby">
+            <option value="livros">Ler livros</option>
+            <option value="musica">Ouvir música</option>
+            <option value="cinema">Ver filmes</option>
+            <option value="esporte">Praticar esportes</option>
+            <option value="games">Jogar games</option>
+         </select>
+
+         Observações gerais: <br>
+         <textarea name="observacoes" rows="5" cols="60"></textarea><br>
+
+         <input type="submit" value="Enviar os dados" onclick="validar();">
+         <input type="reset" value="Limpar os dados">
+
+    </form>
+
+    <h1>Teste do DOM</h1>
+    <p>
+        Você conhece ou já escutou falar em árvores do DOM?
+        Se você não conhece, aprenda um pouco em <a href="https://tableless.github.io/iniciantes/manual/obasico/oquedom.html" target="_blank">Tableless Github</a>
+        e seja expert no assunto!!!
+    </p>
+    <span onclick="testeArvoreDOM();">Clique aqui para testar a Árvore do DOM</span>
+</body>
+<script src="./meuScript.js"></script>
+</html>

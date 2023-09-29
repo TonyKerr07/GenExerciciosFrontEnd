@@ -1,0 +1,51 @@
+body {
+    background-color: #f0f0ff;
+    margin: 0;
+    padding: 50px;
+    padding-top: 100px;
+}
+
+header {
+    background-color: #1e3a5d;
+    color: white;
+    padding: 5px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer {
+    background-color: #1e3a5d;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: large;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #1e3a5d;
+    color: white;
+}
+
+a {
+    text-align: left;
+    color: white;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-right: 0;
+}
+
+.icon {
+    width: 20px;
+    height: auto;
+}
+
+form {
+    text-align: center;
+}

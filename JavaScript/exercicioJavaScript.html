@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de curriculo - Exercício JavaScript</title>
+    <link rel="stylesheet" href="cadastroCurriculocss.css">
+    <script src = "validacaojs.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Cadastre seu currículo</h1>
+    </header>
+
+    <form action="mailto:teste@gmail.com" method="post" enctype="text/plain" name="cadastro">
+        <p>Preencha os campos abaixo e clique enviar.<br> Muito obrigado!
+            <br>
+        </p>
+        Nome completo: <br><input type="text" name="nome" size="35"><br><br>
+
+        Seu e-mail: <br><input type="text" name="email" size="35"><br><br>
+
+        <label for="arquivo">Faça o upload de um currículo:</label><br>
+        <input type="file" name="arquivo" id="arquivo"><br><br>
+
+        Data de Nascimento: <br><input type="date" name="data_nascimento"><br><br>
+
+        Gênero: <br>
+        <input type="radio" name="genero" value="f">Feminino<br>
+        <input type="radio" name="genero" value="m">Masculino<br>
+        <input type="radio" name="genero" value="o">Outro<br>
+        <input type="radio" name="genero" value="p">Prefiro não me identificar<br><br>
+
+        Estado Civil:<br>
+        <input type="radio" name="civil" value="s">Solteiro<br>
+        <input type="radio" name="civil" value="c">Casado<br>
+        <input type="radio" name="civil" value="e">Divorciado<br>
+        <input type="radio" name="civil" value="e">Viúvo<br><br>
+
+        Telefone de contato: <br>
+        <input type="tel" name="telefone" size="30" pattern="[0-9]{10}" placeholder="Digite o telefone (apenas números)"
+            required><br><br>
+
+        Resumo profissional: <br>
+        <textarea name="resumo" rows="5" cols="60"></textarea><br><br>
+
+        Experiência Profissional:<br>
+        <label for="empresa1">Nome da Empresa:</label><br>
+        <input type="text" name="empresa1" size="60"><br>
+
+        <label for="cargo1">Cargo:</label><br>
+        <input type="text" name="cargo1" size="60"><br>
+
+        <label for="data_admissao1">Data de Admissão:</label><br>
+        <input type="date" name="data_admissao1"><br>
+
+        <label for="data_desligamento1">Data de Desligamento:</label><br>
+        <input type="date" name="data_desligamento1"><br>
+
+        <label for="descricao1">Descrição das Atividades:</label><br>
+        <textarea name="descricao1" rows="5" cols="60"></textarea><br><br>
+
+        Formação Acadêmica:<br>
+        <label for="instituicao1">Nome da Instituição:</label><br>
+        <input type="text" name="instituicao1" size="50"><br>
+
+        <label>Nível de Ensino:</label><br>
+        <input type="radio" name="nivel_ensino1" value="ensino_medio">Ensino Médio
+        <input type="radio" name="nivel_ensino1" value="graduacao">Graduação
+        <input type="radio" name="nivel_ensino1" value="pos_graduacao">Pós-Graduação <br>
+
+        <label for="curso1">Nome do Curso:</label><br>
+        <input type="text" name="curso1" size="50"><br>
+
+        <label for="data_termino1">Data de Término (ou previsão):</label><br>
+        <input type="date" name="data_termino1"><br><br>
+
+        Competências: <br>
+        <textarea name="competencias" rows="5" cols="60"></textarea><br><br>
+
+        Disponibilidade para viajar: <br>
+        <input type="radio" name="viagem" value="sim">Sim
+        <input type="radio" name="viagem" value="nao">Não
+        <br><br>
+
+        <label for="pretensao_salarial">Pretensão Salarial:</label><br>
+        <select name="pretensao_salarial">
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="ate_2000">Até R$ 2.000,00</option>
+            <option value="2000_4000">R$ 2.000,00 - R$ 4.000,00</option>
+            <option value="4000_6000">R$ 4.000,00 - R$ 6.000,00</option>
+            <option value="6000_8000">R$ 6.000,00 - R$ 8.000,00</option>
+            <option value="mais_8000">Mais de R$ 8.000,00</option>
+        </select><br><br>
+
+        Observações gerais: <br>
+        <textarea name="observacoes" rows="5" cols="60"></textarea><br><br>
+
+        <input type="submit" value="Enviar os dados" class="button" onclick="return validar();">
+        <input type="reset" value="Limpar os dados" class="button">
+    </form>
+
+    <footer>
+        Desenvolvido por Antonio Kerr - Copyright &copy; 2023
+        <a href="https://www.linkedin.com/in/antoniokerr/" target="_blank"><img class="icon"
+                src="./imagens/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://github.com/TonyKerr07" target="_blank"><img class="icon" src="./imagens/github.png"
+                alt="Github"></a>
+    </footer>
+</body>
+
+</html>
