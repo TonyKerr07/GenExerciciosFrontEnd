@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <title>Site Desafio</title>
+    <style>
+        .tm-social {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Menu-->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-warning">
+        <a class="navbar-brand" href="#">KerrSite</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado"
+            aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Contato
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://github.com/TonyKerr07" target="_blank">GitHub</a>
+                        <a class="dropdown-item" href="https://www.linkedin.com/in/antoniokerr/"
+                            target="_blank">LinkedIn</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item">E-mail</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Pesquisar</button>
+            </form>
+        </div>
+    </nav>
+    <!--/Menu-->
+
+    <!--Carousel-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="https://diolinux.com.br/wp-content/uploads/2021/09/java-thumb.png"
+                    alt="Java">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100"
+                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgJ8yWd-sL_KhCo77JYRjCm8dqZ-omGPbmzmmTld5i1vCAAeN7wDjl2dERa94EgTw5cUfchpMgq_c6ahCYIn6mPfPpAZuGgUSfKUpxcAi1hqraBUt6j6eMqKHfdMMSXh2ox2QqfF1uReQ4-0ItPp5m8A49EvwIwUn9JsXQVTss0eHu36qMM2iElNjkH/s1280/spring-edited.png"
+                    alt="Spring Boot">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100"
+                    src="https://quizzes-satellasoft.s3.amazonaws.com/thumbs/lg/quiz-mysql-basico-1660651911.jpg"
+                    alt="MySQL">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100"
+                    src="https://www.pskitservices.com/wp-content/uploads/2019/08/html-css-javascrit.jpg" alt="Front">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+    <!--/Carousel-->
+
+    <!--Jumbotron-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-4">Antonio Kerr</h1>
+            <p class="lead">Este site foi desenvolvido por mim, Antonio Kerr, e abaixo estão algumas habilidades que
+                desenvolvi como Full Stack.</p>
+        </div>
+    </div>
+    <!--/Jumbotron-->
+
+    <!--Cards-->
+    <div class="container">
+        <div class="card-deck">
+            <div class="card">
+                <img class="card-img-top"
+                    src="https://media.licdn.com/dms/image/D4D12AQF-90KZ2rwv0w/article-cover_image-shrink_720_1280/0/1681345659699?e=2147483647&v=beta&t=9Wam5DBg0mT5h4hL0GyK2_-666lVmVicO1p5PNr_0Rw"
+                    alt="Imagem de capa do card - Java">
+                <div class="card-body">
+                    <h5 class="card-title">Java e Spring Boot</h5>
+                    <p class="card-text">Java, uma linguagem de programação robusta, une forças de maneira poderosa com
+                        o framework Spring Boot. Este último, uma extensão eficiente do Spring, simplifica o
+                        desenvolvimento, proporcionando configuração mínima e agilizando o processo. A combinação é
+                        altamente valorizada na indústria, oferecendo estabilidade, segurança e flexibilidade.
+                        Amplamente utilizada para criar desde microsserviços a sistemas empresariais, essa dupla
+                        dinâmica proporciona um ambiente de programação consistente e eficaz.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top"
+                    src="https://quizzes-satellasoft.s3.amazonaws.com/thumbs/lg/quiz-mysql-basico-1660651911.jpg"
+                    alt="Imagem de capa do card - MySQL">
+                <div class="card-body">
+                    <h5 class="card-title">MySQL</h5>
+                    <p class="card-text">MySQL, um dos sistemas de gerenciamento de banco de dados mais populares,
+                        desempenha um papel crucial no armazenamento e recuperação eficientes de dados. Reconhecido por
+                        sua confiabilidade e escalabilidade, o MySQL é amplamente adotado em diversas aplicações, desde
+                        sites simples até sistemas complexos de grandes empresas. Sua natureza de código aberto e a
+                        capacidade de lidar com grandes volumes de dados fazem dele uma escolha preferida para
+                        desenvolvedores. Ao integrar o MySQL em projetos, os desenvolvedores podem garantir uma gestão
+                        eficaz de dados, consultas rápidas e, consequentemente, um desempenho otimizado de suas
+                        aplicações.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top"
+                    src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/56868259/original/7b66f2e8cb87f18a8c48253cf705885bab52e979/create-html-css-javascript-website.jpg"
+                    alt="Imagem de capa do card - FrontEnd">
+                <div class="card-body">
+                    <h5 class="card-title">JavaScript, HTML e CSS</h5>
+                    <p class="card-text">JavaScript, HTML e CSS formam a tríade essencial para o desenvolvimento web
+                        moderno. HTML fornece a estrutura básica, delineando a arquitetura da página. CSS entra em cena
+                        para estilizar e dar vida ao design, manipulando a apresentação visual. Em seguida, JavaScript
+                        assume o controle, adicionando interatividade dinâmica à experiência do usuário. Combinados,
+                        essas tecnologias possibilitam a criação de websites responsivos e ricos em recursos, oferecendo
+                        uma sinergia vital para o desenvolvimento web contemporâneo.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--/Cards-->
+
+        <!--/Texto e Video-->
+        <div class="row mt-5 mb-5">
+
+            <div class="col-md-3">
+                <img src="./imagens/Antonio Kerr.jpg" height="350" width="auto" alt="Foto Antonio Kerr">
+            </div>
+            <div class="col-md-3 mt-4">
+                <h4>Antonio Kerr</h4>
+                <p>Formado em Engenharia Química com foco em Gestão de Negócios. <br>
+                    Ao longo da minha carreira, tive a oportunidade de trabalhar em seis empresas diferentes.
+                    Essas oportunidades me proporcionaram experiências e habilidades valiosas no mundo dos negócios.
+                    <br> Me sinto preparado para atuar como Desenvolvedor FullStack. <br>
+        
+                </p>
+            </div>
+
+            <div class="col-md-6">
+                <h4>O que um Desenvolvedor FullStack Jr deve saber.</h4>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oJlY11LpNvY?si=n04QRnmc-hypXaM9"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+        <!--/Texto e Video-->
+
+        <!--Formulário de Contato-->
+        <div class="row" name="formulario">
+            <div class="col-md-12">
+                <h4 class="text-center">Entre em contato comigo!</h4>
+            </div>
+
+            <div class="row w-100">
+                <div class="col-md-12">
+                    <form>
+                        <div class="form-group" name="email">
+                            <label for="exampleFormControlInput1">Endereço de email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1"
+                                placeholder="nome@exemplo.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Mensagem</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+
+                        <div class="form-group ">
+                            <button class="btn btn-outline-warning w-100">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!--/Formulário de Contato-->
+
+        <!--Footer-->
+        <hr>
+        <footer>
+
+            <div class="row mb-3">
+                <div class="col-md-12 d-flex justify-content-center">
+                    <a href="https://www.linkedin.com/in/antoniokerr/" target="_blank" class="p-3">
+                        <img class="tm-social" src="./imagens/linkedin.png" alt="Logo LinkedIn">
+                    </a>
+
+                    <a href="https://github.com/TonyKerr07" target="_blank" class="p-3">
+                        <img class="tm-social" src="./imagens/github.png" alt="Logo GitHub">
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">Desenvolvido por Antonio Kerr &copy;</p>
+
+                </div>
+            </div>
+        </footer>
+        <!--/Footer-->
+    </div>
+
+
+
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
